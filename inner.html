@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Котики из приюта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="wrapper">
+        <span class="display-mode-caption">Вид</span>        
+        <input id="grid" type="radio" class="display-mode-btn" name="btn" value="grid" aria-label="Показать сеткой" checked>        
+        <input id="list" type="radio" class="display-mode-btn" name="btn" value="list" aria-label="Показать списком">
+
+        <ul class="product-list">
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-25.userapi.com/impf/BXcEFXaSZw0p6fm8tVPXbN7DoO5ysesKVFF_oA/DEHJERdsPuM.jpg?size=608x1080&quality=96&sign=56d83c6b62014c0779747c12f8b9f324&type=album"
+                             alt="Фотогафия кота Семёна">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Семён</h3></a>
+                    <p class="category">Кот</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star" aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star" aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star" aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star" aria-label="Вполне добрый" checked>
+                            <input class="rating-star" type="radio" name="star" aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Неторопливый, скромный, добродушный и воспитанный кот.<br><br>
+                        Настоящий русский барин с широкой душой и умными зелёными глазами.<br>
+                        Носит роскошную тёплую шубу красивой полосатой расцветки.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-50.userapi.com/impf/M77cVykyqc-9cCGvy7HlpprYS_5OKSmLXwmm-Q/mm0DvSJTXz8.jpg?size=810x1080&quality=96&sign=809b95c949862dd7f67780e4fca07c02&type=album"
+                             alt="Фотогафия кошки Оливки">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Оливка (ну очень красивая кошечка)</h3></a>
+                    <p class="category">Кошка</p>
+
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star2"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star2"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star2"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star2"aria-label="Вполне добрый" checked>
+                            <input class="rating-star" type="radio" name="star2"aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+
+                    <span class="price">₽ - пожертвование</span>
+
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Обаятельная, ласковая, игривая кошечка с непростой судьбой.<br><br>
+                        Раньше жила в суровых уличных условиях и каждый день был для нее борьбой за выживание,
+                        о чем свидетельствуют ее шрамы на спине.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-70.userapi.com/impf/iJsbwZ62njCRDmgMfM1zlIEAPMJW1MBFd_-j7Q/F_c8vymObK8.jpg?size=1280x1279&quality=96&sign=10dca7dc1f3d2a3f9bcd6de90f4a98e4&type=album"
+                             alt="Фотогафия кота Кардинала">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Кардинал</h3></a>
+                    <p class="category">Кот</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star3"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star3"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star3"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star3"aria-label="Вполне добрый" checked>
+                            <input class="rating-star" type="radio" name="star3"aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Харизматичный, аккуратный, спокойный и воспитанный молодой кот.<br><br>
+                        Знает, что такое домашняя жизнь, но всё лето и пол осени скитался
+                        по подвалам и на улице.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-42.userapi.com/impf/NMFI3LMhQ_QpnjpPuaXGDizLvch2BXu0DgAJXg/Eznk5YIC4t4.jpg?size=670x1080&quality=96&sign=cfbd1ff1c994db9e71d553e8c6a6ce31&type=album"
+                             alt="Фотогафия кошки Солнышко">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Солнышко</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star4"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star4"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star4"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star4"aria-label="Вполне добрый">
+                            <input class="rating-star" type="radio" name="star4"aria-label="Очень добрый" checked>
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Всегда в хорошем настроении и готова общаться!<br><br>
+                        Может играть самостоятельно, но не откажется и от компании.
+                        В любой момент ждёт руку, которая будет нежно ее гладить.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-66.userapi.com/impf/CAfFUZkPHiwC-VnzFIfRsFp8UwYeft4xlAa92Q/3SbmSuEHbjI.jpg?size=720x1080&quality=96&sign=69f3c59334f3c23b40e1b45887547839&type=album"
+                             alt="Фотогафия кота Симбы">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Симба</h3></a>
+                    <p class="category">Кот</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star5"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star5"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star5"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star5"aria-label="Вполне добрый">
+                            <input class="rating-star" type="radio" name="star5"aria-label="Очень добрый" checked>
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Обаятельный и постоянно урчащий котёнок с прекрасным хаактером!<br><br>
+                        Как и все дети, он любит поиграть, как и многие бездомыши, любит поесть,
+                        а обычно просто быть рядом с человеком. Здоров, приучен к лотку и готов к новому дому.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-59.userapi.com/impf/B8YPlch1ETwduND__akucsSTK3mNWdO0CVkFxQ/NFnuJnQi18Q.jpg?size=810x1080&quality=96&sign=28b20a1606f0473b34061f8121a014c0&type=album"
+                             alt="Фотогафия кошки Луизы">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Рыжуня</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star6"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star6"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star6"aria-label="Нормальный" checked>
+                            <input class="rating-star" type="radio" name="star6"aria-label="Вполне добрый">
+                            <input class="rating-star" type="radio" name="star6"aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Серьёзная мордочка маленькой хищницы, шубка тёплого рыжего цвета, умные глазки
+                        песочного оттенка и непростой характер диковатой Кошки.<br><br>
+                        Любит играть и ловить мышек. Станет отличным компаньоном активному человеку.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-45.userapi.com/impf/iB1EHbFAAKz2onJ70DKc0Lsdwa0-4avtkno2mA/WBq_S-zUG0s.jpg?size=692x1047&quality=96&proxy=1&sign=5cf75b5cd8ec406a23a31a01fdfa90fe&type=album"
+                             alt="Фотогафия кошки Долли">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Долли</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star7"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star7"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star7"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star7"aria-label="Вполне добрый" checked>
+                            <input class="rating-star" type="radio" name="star7"aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Самодостаточная, ласковая и немного трусливая, но по настроению игривая и в меру
+                        ленивая.<br><br>
+                        Когда-то, защищая себя и потомство, травмировала лапу и хвост.
+                        Сейчас оправилась и с каждым днём раскрывает свои плюсы.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-31.userapi.com/impf/8UBBhj59EQSaslQuq3vB2owHo1l7WsDOY07Xbg/mULGzTqLEXw.jpg?size=720x1080&quality=96&sign=86889c157b38f3849894038ac7273a82&type=album"
+                             alt="Фотогафия кошка Муза">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Муза</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star8"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star8"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star8"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star8"aria-label="Вполне добрый" checked>
+                            <input class="rating-star" type="radio" name="star8"aria-label="Очень добрый">
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Осторожная деликатная, стеснительная.<br><br>
+                        Знает лоток и когтеточку, не портит мебель. Хорошо сходится с другими кошками, не агрессивна к
+                        ним.
+                        Робко вступает в игру, с любопытством наблюдает за людьми и своими сородичами.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-44.userapi.com/impf/g-8mGNFlaOL0PJsaYGEHDQdMaAFmNEpsGEiHFg/zOSVhPbeTxU.jpg?size=810x1080&quality=96&sign=43e3096cc06eed0ab837710f6cc24162&type=album"
+                             alt="Фотогафия кошки Наоми">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Наоми</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star9"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star9"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star9"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star9"aria-label="Вполне добрый">
+                            <input class="rating-star" type="radio" name="star9"aria-label="Очень добрый" checked>
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Модель с обложки журнала, идеальна, красива, мила и привлекательна.<br><br>
+                        При всех внешних достойнствах человеколюбива и очень энергична.
+                        Любовь и ласка ее быстро успокаивают и она расслабляется на руках или на диване.
+                    </p>
+                </div>
+            </li>
+
+            <li class="product-item">
+                <div class="product-img">
+                    <a href="#">
+                        <img src="https://sun9-26.userapi.com/impf/uvP2vB0cgYp5s_0DUtnWV4KEgihQ-qeP_-t95w/B__Zq5DYF9I.jpg?size=810x1080&quality=96&sign=9d5b4b31a8312fd8144ba09f11397e23&type=album"
+                             alt="Фотогафия кошки Кнопочки">
+                    </a>
+                </div>
+                <div class="product-info">
+                    <a class="cat-name" href="#"><h3>Кнопочка</h3></a>
+                    <p class="category">Кошка</p>
+                    <fieldset class="stars">
+                        <legend>Уровень доброты</legend>
+                        <div class="rating">
+                            <input class="rating-star" type="radio" name="star10"aria-label="Очень злой">
+                            <input class="rating-star" type="radio" name="star10"aria-label="Безразличный">
+                            <input class="rating-star" type="radio" name="star10"aria-label="Нормальный">
+                            <input class="rating-star" type="radio" name="star10"aria-label="Вполне добрый">
+                            <input class="rating-star" type="radio" name="star10"aria-label="Очень добрый" checked>
+                        </div>
+                    </fieldset>
+                    <span class="price">₽ - пожертвование</span>
+                </div>
+                <div class="description">
+                    <p class="about">
+                        Маленькая и от прикосновения включает вибрацию со звуком.<br><br>
+                        Готова без остановки болтать с человеком. Ручная, очень ласковая и игривая девочка!
+                        Ей всего 3-4 месяца. В клетке сидит с большой неохотой, плачет и рвется наружу.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    padding: 20px 40px;
+    background-color: #39404B;
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+.wrapper {
+    position: relative;
+    width: 80vw;
+    left: 50%;
+    padding-top: 15px;
+    transform: translate(-50%);
+}
+input {
+    outline: none;
+}
+
+/* Display menu */
+
+.display-mode-caption,
+.display-mode-btn {
+    background: white;
+    border: 1px solid #eee;
+}
+
+.display-mode-caption {
+    position: relative;
+    top: -12px;
+    padding: 9px 8px 7px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.display-mode-btn {
+    appearance: none;
+    margin: 0 0 0 -5px;
+    width: 40px;
+    height: 40px;
+}
+
+.display-mode-btn:checked {
+    background-color: rgb(170, 159, 159);
+    transition: background-color 0.2s linear;
+}
+
+.display-mode-btn#grid {
+    background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.display-mode-btn#list {
+    background-image: url(images/list.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Catalogue */
+
+.product-list {
+    margin: 10px 0 10px;
+    text-align: justify;
+    padding-inline-start: 0;
+}
+
+.product-item {
+    display: inline-block;
+    width: 300px;
+    min-height: 665px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#list:checked ~ .product-list .product-item {
+    display: block;
+    min-height: 360px;
+    width: 100%;
+
+}
+
+#list:checked ~ .product-list .product-item div {
+    display: inline-block;
+    position: relative;
+    text-align: inherit;
+    vertical-align: top;
+}
+
+#list:checked ~ .product-list .product-item div:not(:last-child) {
+    margin-right: 7%;
+}
+
+.product-item:hover .product-img {
+    opacity: 0.7;
+    transition: opacity 0.3s linear;
+}
+
+.product-img img {
+    width: 280px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.product-info h3 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin: 15px 0 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#list:checked ~ .product-list .product-item h3 {
+    max-width: 300px;
+    white-space: normal;
+}
+
+.product-item:hover .cat-name {
+    color: red;
+    transition: color 0.3s linear;
+}
+
+.product-info .category {
+    font-size: 12px;
+    color: gray;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Rating */
+
+.stars {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.stars legend {
+    display: none;
+}
+
+.rating {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    background-image: url(images/star.png);
+    background-size: 20px auto;
+    background-repeat: repeat-x;
+}
+
+.rating-star {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    font-size: inherit;
+}
+
+/* Rating Options */
+
+.rating-star:first-child {
+    width: 20px;
+    z-index: 5;
+
+}
+
+.rating-star:nth-child(2) {
+    width: 40px;
+    z-index: 4;
+}
+
+.rating-star:nth-child(3) {
+    width: 60px;
+    z-index: 3;
+}
+
+.rating-star:nth-child(4) {
+    width: 80px;
+    z-index: 2;
+}
+
+.rating-star:last-child {
+    width: 100px;
+    z-index: 1;
+}
+
+.rating-star:checked,
+.rating-star:hover {
+    background-image: url(images/yellow_star.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.rating-star:hover ~ .rating-star {
+    background-image: url(images/star.png);
+}
+/* End of rating */
+
+.price {
+    display: block;
+    color: #E34D38;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+.about {
+    font-size: 13px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+#list:checked ~ .product-list .product-item .description {
+    max-width: 250px;
+    float: right;
+}
